@@ -9,7 +9,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
 
         int[] enterpriseSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 181;
+        int expected = 180;
         int actual = service.theSumOfAllSales(enterpriseSales);
         assertEquals(expected, actual);
     }
@@ -19,7 +19,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
 
         int[] enterpriseSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 16;
+        int expected = 15;
         int actual = service.averageSumSales(enterpriseSales);
         assertEquals(expected, actual);
     }
@@ -29,7 +29,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
 
         long[] enterpriseSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 6;
+        int expected = 8;
         int actual = service.maxSales(enterpriseSales);
         assertEquals(expected, actual);
     }
@@ -39,7 +39,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
 
         long[] enterpriseSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 8;
+        int expected = 9;
         int actual = service.minSales(enterpriseSales);
         assertEquals(expected, actual);
     }
@@ -49,7 +49,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
 
         int[] enterpriseSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 1;
+        int expected = 5;
         int actual = service.numberMonthsSalesBelowAverage(enterpriseSales);
         assertEquals(expected, actual);
     }
@@ -59,7 +59,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
 
         int[] enterpriseSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 6;
+        int expected = 5;
         int actual = service.numberMonthsSalesAboveAverage(enterpriseSales);
         assertEquals(expected, actual);
     }
